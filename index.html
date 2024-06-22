@@ -1,0 +1,255 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="port.css">
+    <title>PP Raihan Zaman </title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logo.jpeg">
+            <a href="https://www.facebook.com/raihan.zaman.7169" target="_blank">Raihan Zaman</a>
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Contact Me</button>
+            <div class="dropdown-content">
+            <button onclick="call()"><i class='bx bxs-phone-call'></i> Phone</button>
+            <button onclick="sms()"><i class='bx bxs-message'></i>SMS</button>
+            <button onclick="Email()"><i class='bx bxs-envelope'></i>Email</button>
+          </div>
+        </div>
+          <div class="menu">
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+          </div>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Hi, I am Raihan</h5>
+            <h3>I create <span> Innovative web site </span> and Topnotch experience</h3>
+            <p>
+                Welcome to my web development services! Whether you need a new website from scratch or want to improve an existing one, I am here to help you achieve your vision.
+            </p>
+            <button onclick="sendEmail()">Get In Touch</button>
+        
+        </div>
+        <div class="right">
+            <img src="WhatsApp Image 2024-06-01 at 6.42.04 PM.jpg">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h5>My Skills</h5>
+        <h3>My Expertise</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-directions'></i></div>
+                <h4>Front-end web development</h4>
+                <p>
+                    Creating stunning, responsive websites with modern front-end technologies.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+                <h4>Branding & Logo</h4>
+                <p>
+                Crafting unique, memorable brand identities and distinctive logos.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-figma'></i></i></div>
+                <h4>UI & UX Design</h4>
+                <p>
+                 Designing intuitive, user-friendly interfaces for seamless experiences.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
+                <h4>data analytics</h4>
+                <p>
+                    Transforming complex data into actionable business insights.
+                </p>
+            </div>
+        </div>
+        <div class="chart">
+            <div class="chart-container">
+            <div id="piechart"></div>
+            </div>
+            </div>
+    
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="raihan.png">
+        </div>
+        <div class="right">
+            <h5>About</h5>
+            <h3>About Me</h3>
+            <p>
+                I'm Raihan Zaman, a CSE student and front-end developer with a passion for creating intuitive and dynamic user interfaces. I also have experience in machine learning projects, showcasing my versatility in both software development and data science. My goal is to blend creativity with technology.
+            </p>
+            <p>
+                "Explore my work and let's create something amazing together!"
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h5>Recent Projects</h5>
+                <h3>My Portfolio</h3>
+            </div>
+            <button><i class='bx bxl-github'></i> Visit My Github</button>
+        </div>
+
+        <div class="portfo-items">
+            <div class="item">
+                <img src="chess2.jpg">
+                <div class="info">
+                    <h4>Chess Game </h4>
+                    <p>
+                        write
+                    </p>
+                    <a href="https://rayanzaman.github.io/chessgame/">View in Github <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Music-Player-UI.jpg">
+                <div class="info">
+                    <h4>Music player</h4>
+                    <p>
+                        write
+                    </p>
+                    <a href="#">View in Github <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Solar.jpg">
+                <div class="info">
+                    <h4>Solar Module </h4>
+                    <p>
+                    
+                    </p>
+                    <a href="https://rayanzaman.github.io/solar/">View in Github <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="feedback" id="feedback">
+        <h5>Clients Reviews</h5>
+        <h3>Customers Feedback</h3>
+        <div class="customers">
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Remarkable work! As a lone operative, I trusted this service with my mission, and they delivered with impeccable skill and flair. The outcome? A design so sharp, it could disarm even the most cunning of villains. Bravo!"
+                </p>
+                <div class="user">
+                    <img src="jon.jpg">
+                    <div class="info">
+                        <h5>Johnny English</h5>
+                        <p>MI7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Flawless execution. They understood my vision and delivered with precision. Their work is lethal in the corporate world. Impressive."
+                </p>
+                <div class="user">
+                    <img src="IMG_3546 (1).png">
+                    <div class="info">
+                        <h5>Patrick Bateman</h5>
+                        <p>Pierce & Pierce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Top-notch service! They took my vision and made it a reality. Their work is bold, innovative, and absolutely money-making. If you want to stand out, these guys are the ones to call!"
+                </p>
+                <div class="user">
+                    <img src="decap.jpg">
+                    <div class="info">
+                        <h5>Leonardo DiCaprio</h5>
+                        <p>L.F. Rothschild </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="logo.jpeg">
+                <a href="#">Raihan Zaman</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/raihan-zaman-3a3019313/"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Setting</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="chat.js"></script>
+    <script src="port.js"></script>
+</body>
+
+</html>
